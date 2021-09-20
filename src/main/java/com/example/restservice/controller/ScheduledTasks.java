@@ -21,4 +21,6 @@ public class ScheduledTasks {
     public void reportCurrentTime() {
         log.info("现在的时间是{}", dateFormat.format(new Date()));
     }
+
+    //rabbit定时发送类
 }
