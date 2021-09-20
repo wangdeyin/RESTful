@@ -23,9 +23,8 @@ public class MyApplication {
 
 
     public static void main(String[] args) throws InterruptedException{
-        //SpringApplication.run(MyApplication.class, args);
-        //rabbitmq application.close()
-        SpringApplication.run(MyApplication.class, args).close();
+        SpringApplication.run(MyApplication.class, args);
+//        SpringApplication.run(MyApplication.class, args).close();//rabbitmq application.close()  .close()是执行一次就关闭
     }
 
     @Bean
