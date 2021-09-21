@@ -20,13 +20,13 @@ public class ScheduledTasks {
 
     private Jedis jedis = new Jedis("127.0.0.1",6379);
 
-    @Scheduled(fixedRate = 5000)
+    //@Scheduled(fixedRate = 5000)
     public void reportCurrentTime() {
         log.info("现在的时间是{}", dateFormat.format(new Date()));
     }
 
     //使用redis
-    @Scheduled(fixedRate = 10000)
+    //@Scheduled(fixedRate = 10000)
     public void redis() {
         log.info("jedis开始{}", dateFormat.format(new Date()));
         jedis.set("ceshi","我来测试一下这样行不行");
